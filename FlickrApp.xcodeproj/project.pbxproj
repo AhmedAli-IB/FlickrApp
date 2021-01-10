@@ -13,8 +13,6 @@
 		606DB83325AAF670009A34E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83125AAF670009A34E0 /* Main.storyboard */; };
 		606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83425AAF671009A34E0 /* Assets.xcassets */; };
 		606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83625AAF671009A34E0 /* LaunchScreen.storyboard */; };
-		606DB84325AAF671009A34E0 /* FlickrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB84225AAF671009A34E0 /* FlickrAppTests.swift */; };
-		606DB84E25AAF671009A34E0 /* FlickrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB84D25AAF671009A34E0 /* FlickrAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +42,8 @@
 		606DB83725AAF671009A34E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		606DB83925AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		606DB83E25AAF671009A34E0 /* FlickrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		606DB84225AAF671009A34E0 /* FlickrAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAppTests.swift; sourceTree = "<group>"; };
 		606DB84425AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		606DB84925AAF671009A34E0 /* FlickrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		606DB84D25AAF671009A34E0 /* FlickrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAppUITests.swift; sourceTree = "<group>"; };
 		606DB84F25AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +109,6 @@
 		606DB84125AAF671009A34E0 /* FlickrAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				606DB84225AAF671009A34E0 /* FlickrAppTests.swift */,
 				606DB84425AAF671009A34E0 /* Info.plist */,
 			);
 			path = FlickrAppTests;
@@ -122,7 +117,6 @@
 		606DB84C25AAF671009A34E0 /* FlickrAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				606DB84D25AAF671009A34E0 /* FlickrAppUITests.swift */,
 				606DB84F25AAF671009A34E0 /* Info.plist */,
 			);
 			path = FlickrAppUITests;
@@ -135,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 606DB85225AAF671009A34E0 /* Build configuration list for PBXNativeTarget "FlickrApp" */;
 			buildPhases = (
+				606DB85E25AAF7BC009A34E0 /* Swift Lint */,
 				606DB82425AAF670009A34E0 /* Sources */,
 				606DB82525AAF670009A34E0 /* Frameworks */,
 				606DB82625AAF670009A34E0 /* Resources */,
@@ -253,6 +248,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		606DB85E25AAF7BC009A34E0 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		606DB82425AAF670009A34E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606DB84325AAF671009A34E0 /* FlickrAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606DB84E25AAF671009A34E0 /* FlickrAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
