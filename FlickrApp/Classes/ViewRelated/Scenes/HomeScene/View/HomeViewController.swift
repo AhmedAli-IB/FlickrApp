@@ -12,7 +12,8 @@ class HomeViewController: BaseViewController {
     // MARK: - Properties
     //
     private let viewModel: HomeViewModel = HomeViewModel()
-    
+    var coordinator: HomeCoordinatorProtocol?
+
     // MARK: - IBOutlets
     //
     @IBOutlet private weak var tableView: UITableView!
@@ -35,7 +36,7 @@ class HomeViewController: BaseViewController {
 private extension HomeViewController {
     
     func configureView() {
-        self.title = "Home 🤟📸"
+        self.title = Strings.title
         self.navigationController?.navigationBar.barTintColor = ColorName.paperColor.color
     }
     
@@ -81,6 +82,11 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return Constants.heightForRow
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photo = viewModel.getCurrentObject(for: indexPath)
+        coordinator?.showDetails(photo: photo)
+    }
 }
 
 // MARK: - Constants
@@ -89,4 +95,12 @@ private extension HomeViewController {
     enum Constants {
         static let heightForRow = CGFloat(200)
     }
+}
+
+// MARK: - Strings
+//
+private extension HomeViewController {
+    enum Strings {
+       static var title = "Home 🤟📸"
+   }
 }

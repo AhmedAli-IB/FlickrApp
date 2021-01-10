@@ -53,6 +53,13 @@
 		606DB97B25AB32C8009A34E0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606DB96825AB31EE009A34E0 /* Kingfisher.framework */; };
 		606DB97C25AB32C8009A34E0 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 606DB96825AB31EE009A34E0 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		606DB98E25AB3582009A34E0 /* Photo+ImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB98D25AB3582009A34E0 /* Photo+ImageRepresentable.swift */; };
+		606DB99925AB427C009A34E0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB99725AB427C009A34E0 /* DetailsViewController.swift */; };
+		606DB99A25AB427C009A34E0 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB99825AB427C009A34E0 /* DetailsViewController.xib */; };
+		606DB9A025AB4351009A34E0 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB99F25AB4351009A34E0 /* DetailsViewModel.swift */; };
+		606DB9A825AB49E8009A34E0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9A725AB49E8009A34E0 /* Coordinator.swift */; };
+		606DB9AE25AB4A77009A34E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9AD25AB4A77009A34E0 /* AppCoordinator.swift */; };
+		606DB9B325AB4B5E009A34E0 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */; };
+		606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +144,13 @@
 		606DB96825AB31EE009A34E0 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		606DB97625AB326D009A34E0 /* ImageRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepresentable.swift; sourceTree = "<group>"; };
 		606DB98D25AB3582009A34E0 /* Photo+ImageRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+ImageRepresentable.swift"; sourceTree = "<group>"; };
+		606DB99725AB427C009A34E0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		606DB99825AB427C009A34E0 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		606DB99F25AB4351009A34E0 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		606DB9A725AB49E8009A34E0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		606DB9AD25AB4A77009A34E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +293,7 @@
 				606DB87A25AAFCB6009A34E0 /* Protocols */,
 				606DB87925AAFCAF009A34E0 /* BaseClasses */,
 				606DB87825AAFCA0009A34E0 /* Scenes */,
+				606DB9AD25AB4A77009A34E0 /* AppCoordinator.swift */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
@@ -295,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				606DB92025AB21C5009A34E0 /* State.swift */,
+				606DB9A725AB49E8009A34E0 /* Coordinator.swift */,
 				606DB92525AB21E0009A34E0 /* Observers */,
 			);
 			path = Tools;
@@ -347,6 +363,7 @@
 		606DB87825AAFCA0009A34E0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				606DB99425AB41A7009A34E0 /* DetailsScene */,
 				606DB88125AAFF25009A34E0 /* HomeScene */,
 			);
 			path = Scenes;
@@ -372,6 +389,7 @@
 		606DB88125AAFF25009A34E0 /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
+				606DB9B125AB4B45009A34E0 /* Coordinator */,
 				606DB88325AAFFCD009A34E0 /* View */,
 				606DB88525AAFFDE009A34E0 /* Cells */,
 				606DB88225AAFFBC009A34E0 /* ViewModel */,
@@ -484,6 +502,41 @@
 				606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */,
 			);
 			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		606DB99425AB41A7009A34E0 /* DetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				606DB99625AB41C0009A34E0 /* View */,
+				606DB99525AB41B7009A34E0 /* ViewModel */,
+			);
+			path = DetailsScene;
+			sourceTree = "<group>";
+		};
+		606DB99525AB41B7009A34E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				606DB99F25AB4351009A34E0 /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		606DB99625AB41C0009A34E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				606DB99725AB427C009A34E0 /* DetailsViewController.swift */,
+				606DB99825AB427C009A34E0 /* DetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		606DB9B125AB4B45009A34E0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */,
+				606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +659,7 @@
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
 				606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */,
 				606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */,
+				606DB99A25AB427C009A34E0 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,14 +744,17 @@
 			files = (
 				606DB93025AB2220009A34E0 /* ObservationToken.swift in Sources */,
 				606DB92D25AB2220009A34E0 /* Observable.swift in Sources */,
+				606DB9A825AB49E8009A34E0 /* Coordinator.swift in Sources */,
 				606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */,
 				606DB92C25AB2220009A34E0 /* Variable.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
 				606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */,
 				606DB94C25AB275B009A34E0 /* HomeTableViewCell.swift in Sources */,
 				606DB95625AB27D3009A34E0 /* NSObject+Helpers.swift in Sources */,
+				606DB99925AB427C009A34E0 /* DetailsViewController.swift in Sources */,
 				606DB92125AB21C5009A34E0 /* State.swift in Sources */,
 				606DB90625AB1EE6009A34E0 /* HomeInteractor.swift in Sources */,
+				606DB9AE25AB4A77009A34E0 /* AppCoordinator.swift in Sources */,
 				606DB91C25AB2174009A34E0 /* BaseViewController.swift in Sources */,
 				606DB96025AB281A009A34E0 /* UIImage+LoadImage.swift in Sources */,
 				606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */,
@@ -708,10 +765,12 @@
 				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
 				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
 				606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */,
+				606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */,
 				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */,
 				606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */,
 				606DB92E25AB2220009A34E0 /* Observer.swift in Sources */,
+				606DB9A025AB4351009A34E0 /* DetailsViewModel.swift in Sources */,
 				606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */,
 				606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */,
 				606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */,
@@ -721,6 +780,7 @@
 				606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */,
 				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
+				606DB9B325AB4B5E009A34E0 /* HomeCoordinator.swift in Sources */,
 				606DB98E25AB3582009A34E0 /* Photo+ImageRepresentable.swift in Sources */,
 				606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */,
 				606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */,

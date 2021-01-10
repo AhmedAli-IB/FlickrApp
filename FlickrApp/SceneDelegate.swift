@@ -10,13 +10,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+    var coordinator: AppCoordinator?
+
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         
         if let windowScene = scene as? UIWindowScene {
-            setupAppWindow(windowScene)
+//            setupAppWindow(windowScene)
+            let window = UIWindow(windowScene: windowScene)
+            coordinator = AppCoordinator(window: window)
+            coordinator?.start()
         }
     }
     
@@ -46,23 +50,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-    }
-}
-
-// MARK: - Setup App Window
-//
-private extension SceneDelegate {
-    
-    /// Sets up the main UIWindow instance.
-    ///
-    func setupAppWindow(_ windowScene: UIWindowScene) {
-        let window = UIWindow(windowScene: windowScene)
-        let homeViewController = HomeViewController()
-        let navigationController = UINavigationController()
-        navigationController.viewControllers = [homeViewController]
-        window.rootViewController = navigationController
-        self.window = window
-        window.makeKeyAndVisible()
-        
     }
 }
