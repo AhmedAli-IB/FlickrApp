@@ -49,6 +49,10 @@
 		606DB95625AB27D3009A34E0 /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */; };
 		606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */; };
 		606DB96025AB281A009A34E0 /* UIImage+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95F25AB281A009A34E0 /* UIImage+LoadImage.swift */; };
+		606DB97725AB326D009A34E0 /* ImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB97625AB326D009A34E0 /* ImageRepresentable.swift */; };
+		606DB97B25AB32C8009A34E0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606DB96825AB31EE009A34E0 /* Kingfisher.framework */; };
+		606DB97C25AB32C8009A34E0 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 606DB96825AB31EE009A34E0 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		606DB98E25AB3582009A34E0 /* Photo+ImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB98D25AB3582009A34E0 /* Photo+ImageRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,20 @@
 			remoteInfo = FlickrApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		606DB97D25AB32C8009A34E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				606DB97C25AB32C8009A34E0 /* Kingfisher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		606DB82825AAF670009A34E0 /* FlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +134,9 @@
 		606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
 		606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
 		606DB95F25AB281A009A34E0 /* UIImage+LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+LoadImage.swift"; sourceTree = "<group>"; };
+		606DB96825AB31EE009A34E0 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		606DB97625AB326D009A34E0 /* ImageRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepresentable.swift; sourceTree = "<group>"; };
+		606DB98D25AB3582009A34E0 /* Photo+ImageRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+ImageRepresentable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606DB97B25AB32C8009A34E0 /* Kingfisher.framework in Frameworks */,
 				606DB8D625AB161F009A34E0 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +173,7 @@
 				606DB84125AAF671009A34E0 /* FlickrAppTests */,
 				606DB84C25AAF671009A34E0 /* FlickrAppUITests */,
 				606DB82925AAF670009A34E0 /* Products */,
+				606DB96725AB31EE009A34E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,6 +364,7 @@
 		606DB87A25AAFCB6009A34E0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				606DB97625AB326D009A34E0 /* ImageRepresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -385,8 +409,8 @@
 		606DB88525AAFFDE009A34E0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */,
-				606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */,
+				606DB99125AB35AD009A34E0 /* UITableViewCells */,
+				606DB98C25AB3571009A34E0 /* Model */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -437,6 +461,31 @@
 			path = Observers;
 			sourceTree = "<group>";
 		};
+		606DB96725AB31EE009A34E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				606DB96825AB31EE009A34E0 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		606DB98C25AB3571009A34E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				606DB98D25AB3582009A34E0 /* Photo+ImageRepresentable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		606DB99125AB35AD009A34E0 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */,
+				606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,6 +498,8 @@
 				606DB82425AAF670009A34E0 /* Sources */,
 				606DB82525AAF670009A34E0 /* Frameworks */,
 				606DB82625AAF670009A34E0 /* Resources */,
+				606DB97D25AB32C8009A34E0 /* Embed Frameworks */,
+				606DB98125AB32E1009A34E0 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -611,6 +662,25 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
+		606DB98125AB32E1009A34E0 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -631,6 +701,7 @@
 				606DB91C25AB2174009A34E0 /* BaseViewController.swift in Sources */,
 				606DB96025AB281A009A34E0 /* UIImage+LoadImage.swift in Sources */,
 				606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */,
+				606DB97725AB326D009A34E0 /* ImageRepresentable.swift in Sources */,
 				606DB91725AB2162009A34E0 /* BaseViewModel.swift in Sources */,
 				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
 				606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */,
@@ -650,6 +721,7 @@
 				606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */,
 				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
+				606DB98E25AB3582009A34E0 /* Photo+ImageRepresentable.swift in Sources */,
 				606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */,
 				606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */,
 			);
@@ -819,6 +891,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -828,6 +904,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -838,6 +915,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -847,6 +928,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -998,6 +1080,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1007,6 +1093,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = QA;
 		};
