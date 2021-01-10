@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB82B25AAF670009A34E0 /* AppDelegate.swift */; };
 		606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB82D25AAF670009A34E0 /* SceneDelegate.swift */; };
-		606DB83025AAF670009A34E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB82F25AAF670009A34E0 /* ViewController.swift */; };
-		606DB83325AAF670009A34E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83125AAF670009A34E0 /* Main.storyboard */; };
 		606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83425AAF671009A34E0 /* Assets.xcassets */; };
 		606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83625AAF671009A34E0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -36,8 +34,6 @@
 		606DB82825AAF670009A34E0 /* FlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DB82B25AAF670009A34E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		606DB82D25AAF670009A34E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		606DB82F25AAF670009A34E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		606DB83225AAF670009A34E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		606DB83425AAF671009A34E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606DB83725AAF671009A34E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		606DB83925AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,13 +91,14 @@
 		606DB82A25AAF670009A34E0 /* FlickrApp */ = {
 			isa = PBXGroup;
 			children = (
+				606DB86D25AAFB72009A34E0 /* Configurations */,
+				606DB86C25AAFB56009A34E0 /* Resources */,
+				606DB86B25AAFB1C009A34E0 /* Extensions */,
+				606DB86E25AAFB91009A34E0 /* Classes */,
+				606DB86F25AAFB9D009A34E0 /* Networking */,
 				606DB82B25AAF670009A34E0 /* AppDelegate.swift */,
 				606DB82D25AAF670009A34E0 /* SceneDelegate.swift */,
-				606DB82F25AAF670009A34E0 /* ViewController.swift */,
-				606DB83125AAF670009A34E0 /* Main.storyboard */,
-				606DB83425AAF671009A34E0 /* Assets.xcassets */,
 				606DB83625AAF671009A34E0 /* LaunchScreen.storyboard */,
-				606DB83925AAF671009A34E0 /* Info.plist */,
 			);
 			path = FlickrApp;
 			sourceTree = "<group>";
@@ -120,6 +117,131 @@
 				606DB84F25AAF671009A34E0 /* Info.plist */,
 			);
 			path = FlickrAppUITests;
+			sourceTree = "<group>";
+		};
+		606DB86B25AAFB1C009A34E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		606DB86C25AAFB56009A34E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				606DB83425AAF671009A34E0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		606DB86D25AAFB72009A34E0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				606DB83925AAF671009A34E0 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		606DB86E25AAFB91009A34E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				606DB87225AAFC12009A34E0 /* Tools */,
+				606DB87025AAFBFF009A34E0 /* ViewRelated */,
+				606DB87125AAFC0A009A34E0 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		606DB86F25AAFB9D009A34E0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				606DB87325AAFC34009A34E0 /* Extensions */,
+				606DB87425AAFC44009A34E0 /* Base */,
+				606DB87625AAFC5C009A34E0 /* Model */,
+				606DB87725AAFC61009A34E0 /* Network */,
+				606DB87525AAFC4C009A34E0 /* EndPoint */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		606DB87025AAFBFF009A34E0 /* ViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				606DB87A25AAFCB6009A34E0 /* Protocols */,
+				606DB87925AAFCAF009A34E0 /* BaseClasses */,
+				606DB87825AAFCA0009A34E0 /* Scenes */,
+			);
+			path = ViewRelated;
+			sourceTree = "<group>";
+		};
+		606DB87125AAFC0A009A34E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		606DB87225AAFC12009A34E0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		606DB87325AAFC34009A34E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		606DB87425AAFC44009A34E0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		606DB87525AAFC4C009A34E0 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		606DB87625AAFC5C009A34E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		606DB87725AAFC61009A34E0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		606DB87825AAFCA0009A34E0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		606DB87925AAFCAF009A34E0 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		606DB87A25AAFCB6009A34E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +350,6 @@
 			files = (
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
-				606DB83325AAF670009A34E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +395,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606DB83025AAF670009A34E0 /* ViewController.swift in Sources */,
 				606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
 			);
@@ -310,14 +430,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		606DB83125AAF670009A34E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				606DB83225AAF670009A34E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		606DB83625AAF671009A34E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlickrApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlickrApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
