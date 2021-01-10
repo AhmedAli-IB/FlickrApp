@@ -11,6 +11,8 @@
 		606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB82D25AAF670009A34E0 /* SceneDelegate.swift */; };
 		606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83425AAF671009A34E0 /* Assets.xcassets */; };
 		606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606DB83625AAF671009A34E0 /* LaunchScreen.storyboard */; };
+		606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB88625AB0068009A34E0 /* HomeViewController.swift */; };
+		606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB88725AB0068009A34E0 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		606DB84425AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		606DB84925AAF671009A34E0 /* FlickrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DB84F25AAF671009A34E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		606DB88625AB0068009A34E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		606DB88725AB0068009A34E0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,7 @@
 		606DB87825AAFCA0009A34E0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				606DB88125AAFF25009A34E0 /* HomeScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -242,6 +247,47 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		606DB88125AAFF25009A34E0 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				606DB88325AAFFCD009A34E0 /* View */,
+				606DB88525AAFFDE009A34E0 /* Cells */,
+				606DB88225AAFFBC009A34E0 /* ViewModel */,
+				606DB88425AAFFD5009A34E0 /* Interactor */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		606DB88225AAFFBC009A34E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		606DB88325AAFFCD009A34E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				606DB88625AB0068009A34E0 /* HomeViewController.swift */,
+				606DB88725AB0068009A34E0 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		606DB88425AAFFD5009A34E0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		606DB88525AAFFDE009A34E0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +396,7 @@
 			files = (
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
+				606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +444,7 @@
 			files = (
 				606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
+				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
