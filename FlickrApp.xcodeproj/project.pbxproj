@@ -42,6 +42,13 @@
 		606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */; };
 		606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */; };
 		606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */; };
+		606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94525AB25DD009A34E0 /* HomeViewModel.swift */; };
+		606DB94C25AB275B009A34E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */; };
+		606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */; };
+		606DB95525AB27D3009A34E0 /* TableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95125AB27D2009A34E0 /* TableView+Helpers.swift */; };
+		606DB95625AB27D3009A34E0 /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */; };
+		606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */; };
+		606DB96025AB281A009A34E0 /* UIImage+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB95F25AB281A009A34E0 /* UIImage+LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +109,13 @@
 		606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
 		606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loadding.swift"; sourceTree = "<group>"; };
+		606DB94525AB25DD009A34E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		606DB95125AB27D2009A34E0 /* TableView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Helpers.swift"; sourceTree = "<group>"; };
+		606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
+		606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		606DB95F25AB281A009A34E0 /* UIImage+LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+LoadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +198,10 @@
 		606DB86B25AAFB1C009A34E0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				606DB95F25AB281A009A34E0 /* UIImage+LoadImage.swift */,
+				606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */,
+				606DB95125AB27D2009A34E0 /* TableView+Helpers.swift */,
+				606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */,
 				606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */,
 				606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */,
 			);
@@ -342,6 +360,7 @@
 		606DB88225AAFFBC009A34E0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				606DB94525AB25DD009A34E0 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -366,6 +385,8 @@
 		606DB88525AAFFDE009A34E0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */,
+				606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -528,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				606DB89B25AB0721009A34E0 /* ConfigDev.xcconfig in Resources */,
+				606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */,
 				606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */,
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
@@ -602,15 +624,19 @@
 				606DB92C25AB2220009A34E0 /* Variable.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
 				606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */,
+				606DB94C25AB275B009A34E0 /* HomeTableViewCell.swift in Sources */,
+				606DB95625AB27D3009A34E0 /* NSObject+Helpers.swift in Sources */,
 				606DB92125AB21C5009A34E0 /* State.swift in Sources */,
 				606DB90625AB1EE6009A34E0 /* HomeInteractor.swift in Sources */,
 				606DB91C25AB2174009A34E0 /* BaseViewController.swift in Sources */,
+				606DB96025AB281A009A34E0 /* UIImage+LoadImage.swift in Sources */,
 				606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */,
 				606DB91725AB2162009A34E0 /* BaseViewModel.swift in Sources */,
 				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
 				606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */,
 				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
 				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
+				606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */,
 				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */,
 				606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */,
@@ -620,6 +646,8 @@
 				606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */,
 				606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */,
 				606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */,
+				606DB95525AB27D3009A34E0 /* TableView+Helpers.swift in Sources */,
+				606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */,
 				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
 				606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */,
