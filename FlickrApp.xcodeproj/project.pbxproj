@@ -28,6 +28,9 @@
 		606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E525AB1A62009A34E0 /* NetworkError.swift */; };
 		606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8F925AB1CB6009A34E0 /* Colors.swift */; };
 		606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8FA25AB1CB6009A34E0 /* Assets.swift */; };
+		606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB90025AB1E5C009A34E0 /* Photo.swift */; };
+		606DB90625AB1EE6009A34E0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */; };
+		606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB90B25AB1FAC009A34E0 /* HomeError+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		606DB8E525AB1A62009A34E0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		606DB8F925AB1CB6009A34E0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		606DB8FA25AB1CB6009A34E0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		606DB90025AB1E5C009A34E0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		606DB90B25AB1FAC009A34E0 /* HomeError+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeError+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,7 @@
 		606DB87125AAFC0A009A34E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				606DB90025AB1E5C009A34E0 /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 				606DB88525AAFFDE009A34E0 /* Cells */,
 				606DB88225AAFFBC009A34E0 /* ViewModel */,
 				606DB88425AAFFD5009A34E0 /* Interactor */,
+				606DB90A25AB1F8A009A34E0 /* ErrorHandling */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 		606DB88425AAFFD5009A34E0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -356,6 +365,14 @@
 				606DB8F925AB1CB6009A34E0 /* Colors.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		606DB90A25AB1F8A009A34E0 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				606DB90B25AB1FAC009A34E0 /* HomeError+UI.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,12 +558,15 @@
 				606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
 				606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */,
+				606DB90625AB1EE6009A34E0 /* HomeInteractor.swift in Sources */,
 				606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */,
 				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
 				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
+				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
 				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */,
 				606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */,
+				606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */,
 				606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */,
 				606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */,
 				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
