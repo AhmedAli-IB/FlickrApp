@@ -22,6 +22,10 @@
 		606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C825AB0F0C009A34E0 /* BaseURL.swift */; };
 		606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C925AB0F0C009A34E0 /* EndPoint.swift */; };
 		606DB8D625AB161F009A34E0 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 606DB8D525AB161F009A34E0 /* Moya */; };
+		606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */; };
+		606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */; };
+		606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E425AB1A62009A34E0 /* NetworkManager.swift */; };
+		606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E525AB1A62009A34E0 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		606DB8C325AB0EBD009A34E0 /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
 		606DB8C825AB0F0C009A34E0 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		606DB8C925AB0F0C009A34E0 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EndPoint+TargetType.swift"; sourceTree = "<group>"; };
+		606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		606DB8E425AB1A62009A34E0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		606DB8E525AB1A62009A34E0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +224,7 @@
 		606DB87325AAFC34009A34E0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			children = (
 				606DB8C825AB0F0C009A34E0 /* BaseURL.swift */,
 				606DB8C925AB0F0C009A34E0 /* EndPoint.swift */,
+				606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -249,6 +259,8 @@
 		606DB87725AAFC61009A34E0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				606DB8E525AB1A62009A34E0 /* NetworkError.swift */,
+				606DB8E425AB1A62009A34E0 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -496,11 +508,15 @@
 				606DB82C25AAF670009A34E0 /* AppDelegate.swift in Sources */,
 				606DB82E25AAF670009A34E0 /* SceneDelegate.swift in Sources */,
 				606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */,
+				606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */,
+				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
 				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
 				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */,
 				606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */,
+				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
+				606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
