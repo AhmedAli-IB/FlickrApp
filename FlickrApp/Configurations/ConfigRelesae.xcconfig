@@ -1,0 +1,13 @@
+//
+//  HomeViewController.swift
+//  FlickrApp
+//
+//  Created by Ahmed Ali on 10/01/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SERVER_URL = www.flickr.com/
+APP_ICON = AppIcon
+APP_NAME = Production
+BUNDLE_IDENTIFIER = com.ibtikar.FlickrApp.FlickrApp
