@@ -1,0 +1,11 @@
+xcassets:
+  inputs: FlickrApp/Resources
+  outputs:
+    - templateName: swift5
+      output: FlickrApp/Resources/Generated/Assets.swift
+
+colors:
+  inputs: FlickrApp/Resources/colors.txt
+  outputs:
+    - templateName: swift5
+      output: FlickrApp/Resources/Generated/Colors.swift

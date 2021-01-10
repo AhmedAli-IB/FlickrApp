@@ -26,6 +26,8 @@
 		606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */; };
 		606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E425AB1A62009A34E0 /* NetworkManager.swift */; };
 		606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E525AB1A62009A34E0 /* NetworkError.swift */; };
+		606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8F925AB1CB6009A34E0 /* Colors.swift */; };
+		606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8FA25AB1CB6009A34E0 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
 		606DB8E425AB1A62009A34E0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		606DB8E525AB1A62009A34E0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		606DB8F925AB1CB6009A34E0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		606DB8FA25AB1CB6009A34E0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				606DB83425AAF671009A34E0 /* Assets.xcassets */,
+				606DB8EF25AB1BCF009A34E0 /* Generated */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -344,6 +349,15 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		606DB8EF25AB1BCF009A34E0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				606DB8FA25AB1CB6009A34E0 /* Assets.swift */,
+				606DB8F925AB1CB6009A34E0 /* Colors.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 606DB85225AAF671009A34E0 /* Build configuration list for PBXNativeTarget "FlickrApp" */;
 			buildPhases = (
+				606DB8EB25AB1B72009A34E0 /* Swift Gen */,
 				606DB85E25AAF7BC009A34E0 /* Swift Lint */,
 				606DB82425AAF670009A34E0 /* Sources */,
 				606DB82525AAF670009A34E0 /* Frameworks */,
@@ -498,6 +513,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		606DB8EB25AB1B72009A34E0 /* Swift Gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Gen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -513,6 +546,8 @@
 				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
 				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */,
+				606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */,
+				606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */,
 				606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */,
 				606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */,
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
