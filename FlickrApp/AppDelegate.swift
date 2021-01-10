@@ -4,7 +4,9 @@
 //
 //  Created by Ahmed Ali on 10/01/2021.
 //
-
+/// We add carthage-build.sh to fix Carthage & Xcode 12 issue. Unfortunately at the moment there is no update from the Carthage team to address this issue. However, there is a shell script you can run to unblock you. It has worked for me. You can follow the thread on the Carthage github account.
+/// https://github.com/Carthage/Carthage/blob/master/Documentation/Xcode12Workaround.md
+///
 import UIKit
 
 @main
