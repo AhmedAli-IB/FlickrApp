@@ -58,5 +58,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>SERVER_URL</key>
+	<string>https://${SERVER_URL}</string>
 </dict>
 </plist>
