@@ -5,31 +5,59 @@
 //  Created by Ahmed Ali on 10/01/2021.
 //
 
+import Moya
 import Foundation
 
-// MARK: - NetworkResult
+// MARK: - Error Type
 //
-enum NetworkResult<String> {
-    case success
-    case failure(String)
+enum `Type`:String, Codable {
+    case business
+    case system
+    case mapping
 }
 
-// MARK: - NetworkResponse
+// MARK: - Network Error
 //
-enum NetworkResponse: String {
-    case success
-    case authenticationError = "You need to be authenticated first."
-    case badRequest = "Bad request"
-    case outdated = "The url you requested is outdated."
-    case failed = "Network request failed."
-    case noData = "Response returned with no data to decode."
-    case unableToDecode = "We could not decode the response."
-    case noInternet = "Please check your internet connection and try again later."
+
+struct NetworkError: Codable, Error {
+   
+    var code: Int?
+    var message: String?
+    var type: Type?
+    
+    // MARK: - Init
+    //
+    init () {}
+    
+    init(error: MoyaError) {
+        self.code = error.errorCode
+        self.message = error.errorDescription
+
+        switch error {
+        case .underlying:
+            self.type = .system
+        default :
+            self.type = .mapping
+        }
+    }
 }
 
-// MARK: - Request Result
-//
-enum RequestResult<T, String> {
-    case success(T)
-    case failure(String)
+// MARK: - NetworkError
+/// Handle Mapping Error
+///
+extension NetworkError {
+    static let parseError: NetworkError = {
+        var error = NetworkError()
+        error.type = Type.mapping
+        error.message = "We could not decode the response."
+        return error
+    }()
+}
+
+// MARK: - Localized Description
+extension NetworkError: LocalizedError {
+    
+    var errorDescription: String? {
+        return self.message
+       }
 }

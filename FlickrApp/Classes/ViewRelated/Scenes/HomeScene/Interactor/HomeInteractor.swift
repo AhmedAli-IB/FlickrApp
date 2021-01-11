@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeInteractorProtocol {
-    func getPhotos(searchText text: String, onCompletion: @escaping (RequestResult<[Photo], String>) -> Void)
+    func getPhotos(searchText text: String, onCompletion: @escaping (Result<[Photo], Error>) -> Void)
 }
 
 // MARK: - Photo Interactor
@@ -16,7 +16,7 @@ protocol HomeInteractorProtocol {
 ///
 class HomeInteractor: HomeInteractorProtocol {
     
-    typealias PhotoCompletion = (RequestResult<[Photo], String>) -> Void
+    typealias PhotoCompletion = (Result<[Photo], Error>) -> Void
     
     // MARK: - Properties
     //
@@ -31,15 +31,15 @@ class HomeInteractor: HomeInteractorProtocol {
     func getPhotos(searchText text: String, onCompletion: @escaping PhotoCompletion) {
         
         let request = PhotoRequest(searchText: text)
-        network.request(.getPhotos(request)) { (result: RequestResult<PhotoMainResponse, String>) in
+        network.request(.getPhotos(request)) { (result: Result<PhotoMainResponse, Error>) in
             switch result {
             
             case .success(let data):
+                
                 guard  let photosData = data.photos?.photo else {
-                    onCompletion(.failure(HomeError.unableToGetPhotos.localizedDescription))
+                    onCompletion(.failure(HomeError.unableToGetPhotos))
                     return
                 }
-                
                 var photos: [Photo]  = []
                 photosData.forEach {
                     guard let photo = Photo(photoData: $0) else { return }
@@ -48,8 +48,8 @@ class HomeInteractor: HomeInteractorProtocol {
                 
                 onCompletion(.success(photos))
                 
-            case .failure(let errorMessage):
-                onCompletion(.failure(errorMessage))
+            case .failure(let error):
+                onCompletion(.failure(error))
             }
         }
     }

@@ -55,8 +55,8 @@ extension HomeViewModel {
                 self.photos = photos
                 self.onReload?()
                 self.state.send(.success)
-            case .failure(let errorMessage):
-                self.state.send(.failure(errorMessage))
+            case .failure(let error):
+                self.state.send(.failure(error.localizedDescription))
             }
         }
     }

@@ -66,6 +66,6 @@ private extension DetailsViewController {
 //
 private extension DetailsViewController {
     enum Strings {
-       static var title = "Details 💪"
+       static let title = "Details 💪"
    }
 }

@@ -15,31 +15,40 @@ class NetworkManager {
     /// Network provider
     ///
     lazy private var provider = MoyaProvider<AppEndPoint>(
-         plugins: [loggingPlugin]
+        plugins: [loggingPlugin]
     )
     
     // MARK: - Handlers
-
+    
     /// Generic network call
     ///
-    func request<T: Codable>(_ target: AppEndPoint, completion: @escaping (RequestResult<T, String>) -> Void) {
+    func request<T: Codable>(_ target: AppEndPoint, completion: @escaping (Result<T, Error>) -> Void) {
         provider.request(target) { result in
             switch result {
             case .success(let response):
-                let result = self.handleNetworkResponse(response.statusCode)
-                switch result {
-                case .success:
+                
+                if (200...299 ~= response.statusCode) {
                     do {
                         let apiResponse = try JSONDecoder().decode(T.self, from: response.data)
                         completion(.success(apiResponse))
                     } catch {
-                        completion(.failure(error.localizedDescription))
+                        completion(.failure(NetworkError.parseError))
                     }
-                case .failure(let networkFailureError):
-                    completion(.failure(networkFailureError))
+                }
+                
+                else {
+                    // 300-399 ,400-499
+                    do {
+                        var businessError = try JSONDecoder().decode(NetworkError.self, from: response.data)
+                        businessError.type = .business
+                        completion(.failure(businessError))
+                    } catch {
+                        completion(.failure(NetworkError.parseError))
+                    }
                 }
             case .failure(let error):
-                completion(.failure(error.localizedDescription))
+                let customError = NetworkError(error: error)
+                completion(.failure(customError))
             }
         }
     }
@@ -56,20 +65,5 @@ private extension NetworkManager {
         NetworkLoggerPlugin(
             configuration: .init(logOptions: .verbose)
         )
-    }
-    
-    /// Hhandle Network Response
-    ///
-    func handleNetworkResponse(_ statusCode: Int) -> NetworkResult<String> {
-        
-        switch statusCode {
-        
-        case 200...299: return .success
-        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
-        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
-        case 600: return .failure(NetworkResponse.outdated.rawValue)
-        default: return .failure(NetworkResponse.failed.rawValue)
-            
-        }
     }
 }
