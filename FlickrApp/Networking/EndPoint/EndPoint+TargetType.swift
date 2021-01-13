@@ -13,7 +13,7 @@ import Moya
 extension AppEndPoint: TargetType {
     
     var baseURL: URL {
-        return BaseURL.url
+        return Environment.rootURL
     }
     
     var path: String {

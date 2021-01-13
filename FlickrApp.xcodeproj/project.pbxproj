@@ -15,7 +15,6 @@
 		606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB88725AB0068009A34E0 /* HomeViewController.xib */; };
 		606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89725AB0721009A34E0 /* ConfigRelesae.xcconfig */; };
 		606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */; };
-		606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8B525AB0DB8009A34E0 /* Settings.swift */; };
 		606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8BE25AB0E92009A34E0 /* PhotoResponse.swift */; };
 		606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C325AB0EBD009A34E0 /* PhotoRequest.swift */; };
 		606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C825AB0F0C009A34E0 /* BaseURL.swift */; };
@@ -108,7 +107,6 @@
 		606DB89725AB0721009A34E0 /* ConfigRelesae.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConfigRelesae.xcconfig; sourceTree = "<group>"; };
 		606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConfigDev.xcconfig; sourceTree = "<group>"; };
 		606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConfigQA.xcconfig; sourceTree = "<group>"; };
-		606DB8B525AB0DB8009A34E0 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		606DB8BE25AB0E92009A34E0 /* PhotoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
 		606DB8C325AB0EBD009A34E0 /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
 		606DB8C825AB0F0C009A34E0 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				606DB87325AAFC34009A34E0 /* Extensions */,
-				606DB87425AAFC44009A34E0 /* Base */,
 				606DB87625AAFC5C009A34E0 /* Model */,
 				606DB87725AAFC61009A34E0 /* Network */,
 				606DB87525AAFC4C009A34E0 /* EndPoint */,
@@ -325,14 +322,6 @@
 				606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		606DB87425AAFC44009A34E0 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				606DB8B525AB0DB8009A34E0 /* Settings.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		606DB87525AAFC4C009A34E0 /* EndPoint */ = {
@@ -769,7 +758,6 @@
 				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
 				606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */,
 				606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */,
-				606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */,
 				606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */,
 				606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */,
 				606DB92E25AB2220009A34E0 /* Observer.swift in Sources */,

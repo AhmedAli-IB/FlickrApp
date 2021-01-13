@@ -10,7 +10,7 @@ import Foundation
 struct PhotoRequest: Encodable {
 
     let method: String = "flickr.photos.search"
-    let apikey: String = Settings.apiKey
+    let apikey: String = Environment.apiKey
     let format: String  = "json"
     let safeSearch: Int = 1
     let noJsonCallBack: Int = 1

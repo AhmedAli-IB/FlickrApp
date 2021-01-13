@@ -59,7 +59,11 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>SERVER_URL</key>
-	<string>https://${SERVER_URL}</string>
+	<string>${SERVER_URL}</string>
+	<key>API_KEY</key>
+	<string>a0ec4ce570ff652cdf19e3ffc5519912</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
