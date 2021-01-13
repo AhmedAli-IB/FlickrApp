@@ -1,0 +1,13 @@
+//
+//  ConfigBaseQA.xcconfig
+//  FlickrApp
+//
+//  Created by Ahmed Ali on 13/01/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SERVER_URL = www.flickr.com/qa
+APP_ICON = AppIcon-QA
+APP_NAME = Testing
+BUNDLE_IDENTIFIER = com.ibtikar.FlickrApp.FlickrApp.QA

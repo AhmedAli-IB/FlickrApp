@@ -8,7 +8,6 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-SERVER_URL = www.flickr.com/
-APP_ICON = AppIcon-Dev
-APP_NAME = Development
-BUNDLE_IDENTIFIER = com.ibtikar.FlickrApp.FlickrApp.dev
+#include "ConfigBaseDev.xcconfig"
+// Override App name with new value
+APP_NAME = Development-Ibtikar

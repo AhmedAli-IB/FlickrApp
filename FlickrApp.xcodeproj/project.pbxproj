@@ -14,7 +14,6 @@
 		606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB88625AB0068009A34E0 /* HomeViewController.swift */; };
 		606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB88725AB0068009A34E0 /* HomeViewController.xib */; };
 		606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89725AB0721009A34E0 /* ConfigRelesae.xcconfig */; };
-		606DB89B25AB0721009A34E0 /* ConfigDev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */; };
 		606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */; };
 		606DB8B625AB0DB8009A34E0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8B525AB0DB8009A34E0 /* Settings.swift */; };
 		606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8BE25AB0E92009A34E0 /* PhotoResponse.swift */; };
@@ -40,7 +39,6 @@
 		606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92925AB2220009A34E0 /* PublishSubject.swift */; };
 		606DB93025AB2220009A34E0 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92A25AB2220009A34E0 /* ObservationToken.swift */; };
 		606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */; };
-		606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */; };
 		606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */; };
 		606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94525AB25DD009A34E0 /* HomeViewModel.swift */; };
 		606DB94C25AB275B009A34E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */; };
@@ -60,6 +58,7 @@
 		606DB9AE25AB4A77009A34E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9AD25AB4A77009A34E0 /* AppCoordinator.swift */; };
 		606DB9B325AB4B5E009A34E0 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */; };
 		606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */; };
+		60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,7 +131,6 @@
 		606DB92925AB2220009A34E0 /* PublishSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		606DB92A25AB2220009A34E0 /* ObservationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationToken.swift; sourceTree = "<group>"; };
 		606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
-		606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loadding.swift"; sourceTree = "<group>"; };
 		606DB94525AB25DD009A34E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,6 +149,9 @@
 		606DB9AD25AB4A77009A34E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		60C84AFD25AF1D11007E04B2 /* ConfigBaseQA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseQA.xcconfig; sourceTree = "<group>"; };
+		60C84B0025AF1DDA007E04B2 /* ConfigBaseRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseRelease.xcconfig; sourceTree = "<group>"; };
+		60C84B0D25AF205A007E04B2 /* ConfigBaseDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseDev.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +241,6 @@
 				606DB95125AB27D2009A34E0 /* TableView+Helpers.swift */,
 				606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */,
 				606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */,
-				606DB93525AB224E009A34E0 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +248,7 @@
 		606DB86C25AAFB56009A34E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				606DB83925AAF671009A34E0 /* Info.plist */,
 				606DB83425AAF671009A34E0 /* Assets.xcassets */,
 				606DB8EF25AB1BCF009A34E0 /* Generated */,
 			);
@@ -257,7 +258,9 @@
 		606DB86D25AAFB72009A34E0 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				606DB83925AAF671009A34E0 /* Info.plist */,
+				60C84B0D25AF205A007E04B2 /* ConfigBaseDev.xcconfig */,
+				60C84B0025AF1DDA007E04B2 /* ConfigBaseRelease.xcconfig */,
+				60C84AFD25AF1D11007E04B2 /* ConfigBaseQA.xcconfig */,
 				606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */,
 				606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */,
 				606DB89725AB0721009A34E0 /* ConfigRelesae.xcconfig */,
@@ -652,7 +655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606DB89B25AB0721009A34E0 /* ConfigDev.xcconfig in Resources */,
+				60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */,
 				606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */,
 				606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */,
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
@@ -782,7 +785,6 @@
 				606DB88825AB0068009A34E0 /* HomeViewController.swift in Sources */,
 				606DB9B325AB4B5E009A34E0 /* HomeCoordinator.swift in Sources */,
 				606DB98E25AB3582009A34E0 /* Photo+ImageRepresentable.swift in Sources */,
-				606DB93625AB224E009A34E0 /* UIViewController+Alerts.swift in Sources */,
 				606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,7 +957,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -979,11 +981,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1144,7 +1147,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Configurations/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
