@@ -17,7 +17,7 @@
 		606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */; };
 		606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8BE25AB0E92009A34E0 /* PhotoResponse.swift */; };
 		606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C325AB0EBD009A34E0 /* PhotoRequest.swift */; };
-		606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C825AB0F0C009A34E0 /* BaseURL.swift */; };
+		606DB8CB25AB0F0C009A34E0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C825AB0F0C009A34E0 /* Environment.swift */; };
 		606DB8CC25AB0F0C009A34E0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8C925AB0F0C009A34E0 /* EndPoint.swift */; };
 		606DB8D625AB161F009A34E0 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 606DB8D525AB161F009A34E0 /* Moya */; };
 		606DB8DB25AB19B0009A34E0 /* EndPoint+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */; };
@@ -58,6 +58,10 @@
 		606DB9B325AB4B5E009A34E0 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B225AB4B5E009A34E0 /* HomeCoordinator.swift */; };
 		606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */; };
 		60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */; };
+		60C84B2925AF3172007E04B2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C84B2825AF3172007E04B2 /* Fonts.swift */; };
+		60C84B2E25AF3407007E04B2 /* 29LTAzer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */; };
+		60C84B3325AF3425007E04B2 /* 29LTAzer-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */; };
+		60C84B3425AF3425007E04B2 /* 29LTAzer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +113,7 @@
 		606DB89925AB0721009A34E0 /* ConfigQA.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConfigQA.xcconfig; sourceTree = "<group>"; };
 		606DB8BE25AB0E92009A34E0 /* PhotoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
 		606DB8C325AB0EBD009A34E0 /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
-		606DB8C825AB0F0C009A34E0 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		606DB8C825AB0F0C009A34E0 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		606DB8C925AB0F0C009A34E0 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EndPoint+TargetType.swift"; sourceTree = "<group>"; };
 		606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
@@ -150,6 +154,10 @@
 		60C84AFD25AF1D11007E04B2 /* ConfigBaseQA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseQA.xcconfig; sourceTree = "<group>"; };
 		60C84B0025AF1DDA007E04B2 /* ConfigBaseRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseRelease.xcconfig; sourceTree = "<group>"; };
 		60C84B0D25AF205A007E04B2 /* ConfigBaseDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseDev.xcconfig; sourceTree = "<group>"; };
+		60C84B2825AF3172007E04B2 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Bold.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Medium.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Medium.otf"; sourceTree = SOURCE_ROOT; };
+		60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Regular.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Regular.otf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +254,7 @@
 		606DB86C25AAFB56009A34E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60C84B2C25AF33D5007E04B2 /* New Group */,
 				606DB83925AAF671009A34E0 /* Info.plist */,
 				606DB83425AAF671009A34E0 /* Assets.xcassets */,
 				606DB8EF25AB1BCF009A34E0 /* Generated */,
@@ -327,7 +336,7 @@
 		606DB87525AAFC4C009A34E0 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
-				606DB8C825AB0F0C009A34E0 /* BaseURL.swift */,
+				606DB8C825AB0F0C009A34E0 /* Environment.swift */,
 				606DB8C925AB0F0C009A34E0 /* EndPoint.swift */,
 				606DB8DA25AB19B0009A34E0 /* EndPoint+TargetType.swift */,
 			);
@@ -444,6 +453,7 @@
 		606DB8EF25AB1BCF009A34E0 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				60C84B2825AF3172007E04B2 /* Fonts.swift */,
 				606DB8FA25AB1CB6009A34E0 /* Assets.swift */,
 				606DB8F925AB1CB6009A34E0 /* Colors.swift */,
 			);
@@ -529,6 +539,16 @@
 				606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		60C84B2C25AF33D5007E04B2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */,
+				60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */,
+				60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -645,8 +665,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */,
+				60C84B3425AF3425007E04B2 /* 29LTAzer-Regular.otf in Resources */,
 				606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */,
 				606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */,
+				60C84B3325AF3425007E04B2 /* 29LTAzer-Medium.otf in Resources */,
+				60C84B2E25AF3407007E04B2 /* 29LTAzer-Bold.otf in Resources */,
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
 				606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */,
@@ -753,8 +776,9 @@
 				606DB97725AB326D009A34E0 /* ImageRepresentable.swift in Sources */,
 				606DB91725AB2162009A34E0 /* BaseViewModel.swift in Sources */,
 				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
+				60C84B2925AF3172007E04B2 /* Fonts.swift in Sources */,
 				606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */,
-				606DB8CB25AB0F0C009A34E0 /* BaseURL.swift in Sources */,
+				606DB8CB25AB0F0C009A34E0 /* Environment.swift in Sources */,
 				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
 				606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */,
 				606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */,

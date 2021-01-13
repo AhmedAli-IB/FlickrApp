@@ -47,6 +47,7 @@ private extension DetailsViewController {
     ///
     func configureView() {
         self.title = Strings.title
+        self.titleLabel.font = FontFamily._29LTAzer.medium.font(size: 20.0)
     }
 
     /// Configure on form values update

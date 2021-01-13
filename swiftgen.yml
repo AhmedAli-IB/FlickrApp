@@ -9,3 +9,9 @@ colors:
   outputs:
     - templateName: swift5
       output: FlickrApp/Resources/Generated/Colors.swift
+
+fonts:
+  inputs: FlickrApp/Resources/fonts
+  outputs:
+    templateName: swift5
+    output: FlickrApp/Resources/Generated/Fonts.swift
