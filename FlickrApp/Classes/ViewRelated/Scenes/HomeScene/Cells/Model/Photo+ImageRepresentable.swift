@@ -10,7 +10,7 @@ import UIKit
 extension Photo: ImageRepresentable {
     
     var placeholderImage: UIImage? {
-        Asset.placeholder.image
+        Asset.Assets.placeholder.image
     }
 
     var imageURL: String? {

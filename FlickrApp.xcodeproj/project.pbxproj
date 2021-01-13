@@ -24,7 +24,6 @@
 		606DB8E025AB19DB009A34E0 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */; };
 		606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E425AB1A62009A34E0 /* NetworkManager.swift */; };
 		606DB8E725AB1A62009A34E0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8E525AB1A62009A34E0 /* NetworkError.swift */; };
-		606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8F925AB1CB6009A34E0 /* Colors.swift */; };
 		606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB8FA25AB1CB6009A34E0 /* Assets.swift */; };
 		606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB90025AB1E5C009A34E0 /* Photo.swift */; };
 		606DB90625AB1EE6009A34E0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */; };
@@ -38,7 +37,6 @@
 		606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92925AB2220009A34E0 /* PublishSubject.swift */; };
 		606DB93025AB2220009A34E0 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92A25AB2220009A34E0 /* ObservationToken.swift */; };
 		606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */; };
-		606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */; };
 		606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94525AB25DD009A34E0 /* HomeViewModel.swift */; };
 		606DB94C25AB275B009A34E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */; };
 		606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */; };
@@ -59,9 +57,11 @@
 		606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DB9B625AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift */; };
 		60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 606DB89825AB0721009A34E0 /* ConfigDev.xcconfig */; };
 		60C84B2925AF3172007E04B2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C84B2825AF3172007E04B2 /* Fonts.swift */; };
-		60C84B2E25AF3407007E04B2 /* 29LTAzer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */; };
-		60C84B3325AF3425007E04B2 /* 29LTAzer-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */; };
-		60C84B3425AF3425007E04B2 /* 29LTAzer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */; };
+		60C84B3825AF425B007E04B2 /* UIViewController.swift+Loadding+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C84B3725AF425B007E04B2 /* UIViewController.swift+Loadding+Alert.swift */; };
+		60C84B4425AF4588007E04B2 /* 29LTAzer-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B4125AF4588007E04B2 /* 29LTAzer-Medium.otf */; };
+		60C84B4525AF4588007E04B2 /* 29LTAzer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B4225AF4588007E04B2 /* 29LTAzer-Bold.otf */; };
+		60C84B4625AF4588007E04B2 /* 29LTAzer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B4325AF4588007E04B2 /* 29LTAzer-Regular.otf */; };
+		60C84B4A25AF45AE007E04B2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C84B4925AF45AE007E04B2 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +119,6 @@
 		606DB8DF25AB19DB009A34E0 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
 		606DB8E425AB1A62009A34E0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		606DB8E525AB1A62009A34E0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		606DB8F925AB1CB6009A34E0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		606DB8FA25AB1CB6009A34E0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		606DB90025AB1E5C009A34E0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 		606DB92925AB2220009A34E0 /* PublishSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		606DB92A25AB2220009A34E0 /* ObservationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationToken.swift; sourceTree = "<group>"; };
 		606DB92B25AB2220009A34E0 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
-		606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loadding.swift"; sourceTree = "<group>"; };
 		606DB94525AB25DD009A34E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		606DB94A25AB275B009A34E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		606DB94B25AB275B009A34E0 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -155,9 +153,11 @@
 		60C84B0025AF1DDA007E04B2 /* ConfigBaseRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseRelease.xcconfig; sourceTree = "<group>"; };
 		60C84B0D25AF205A007E04B2 /* ConfigBaseDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigBaseDev.xcconfig; sourceTree = "<group>"; };
 		60C84B2825AF3172007E04B2 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Bold.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Bold.otf"; sourceTree = SOURCE_ROOT; };
-		60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Medium.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Medium.otf"; sourceTree = SOURCE_ROOT; };
-		60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "29LTAzer-Regular.otf"; path = "FlickrApp/Resources/Fonts/29LTAzer-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		60C84B3725AF425B007E04B2 /* UIViewController.swift+Loadding+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController.swift+Loadding+Alert.swift"; sourceTree = "<group>"; };
+		60C84B4125AF4588007E04B2 /* 29LTAzer-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LTAzer-Medium.otf"; sourceTree = "<group>"; };
+		60C84B4225AF4588007E04B2 /* 29LTAzer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LTAzer-Bold.otf"; sourceTree = "<group>"; };
+		60C84B4325AF4588007E04B2 /* 29LTAzer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LTAzer-Regular.otf"; sourceTree = "<group>"; };
+		60C84B4925AF45AE007E04B2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +246,7 @@
 				606DB95225AB27D2009A34E0 /* NSObject+Helpers.swift */,
 				606DB95125AB27D2009A34E0 /* TableView+Helpers.swift */,
 				606DB95325AB27D2009A34E0 /* UIView+Helpers.swift */,
-				606DB93A25AB228A009A34E0 /* UIViewController+Loadding.swift */,
+				60C84B3725AF425B007E04B2 /* UIViewController.swift+Loadding+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,9 +254,10 @@
 		606DB86C25AAFB56009A34E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				60C84B2C25AF33D5007E04B2 /* New Group */,
+				60C84B4025AF456C007E04B2 /* Fonts */,
 				606DB83925AAF671009A34E0 /* Info.plist */,
 				606DB83425AAF671009A34E0 /* Assets.xcassets */,
+				60C84B4925AF45AE007E04B2 /* Colors.xcassets */,
 				606DB8EF25AB1BCF009A34E0 /* Generated */,
 			);
 			path = Resources;
@@ -394,7 +395,7 @@
 				606DB88325AAFFCD009A34E0 /* View */,
 				606DB88525AAFFDE009A34E0 /* Cells */,
 				606DB88225AAFFBC009A34E0 /* ViewModel */,
-				606DB88425AAFFD5009A34E0 /* Interactor */,
+				606DB88425AAFFD5009A34E0 /* ServiceLocator */,
 				606DB90A25AB1F8A009A34E0 /* ErrorHandling */,
 			);
 			path = HomeScene;
@@ -417,12 +418,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		606DB88425AAFFD5009A34E0 /* Interactor */ = {
+		606DB88425AAFFD5009A34E0 /* ServiceLocator */ = {
 			isa = PBXGroup;
 			children = (
 				606DB90525AB1EE6009A34E0 /* HomeInteractor.swift */,
 			);
-			path = Interactor;
+			path = ServiceLocator;
 			sourceTree = "<group>";
 		};
 		606DB88525AAFFDE009A34E0 /* Cells */ = {
@@ -455,7 +456,6 @@
 			children = (
 				60C84B2825AF3172007E04B2 /* Fonts.swift */,
 				606DB8FA25AB1CB6009A34E0 /* Assets.swift */,
-				606DB8F925AB1CB6009A34E0 /* Colors.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -541,14 +541,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		60C84B2C25AF33D5007E04B2 /* New Group */ = {
+		60C84B4025AF456C007E04B2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				60C84B2D25AF3406007E04B2 /* 29LTAzer-Bold.otf */,
-				60C84B3125AF3425007E04B2 /* 29LTAzer-Medium.otf */,
-				60C84B3225AF3425007E04B2 /* 29LTAzer-Regular.otf */,
+				60C84B4225AF4588007E04B2 /* 29LTAzer-Bold.otf */,
+				60C84B4125AF4588007E04B2 /* 29LTAzer-Medium.otf */,
+				60C84B4325AF4588007E04B2 /* 29LTAzer-Regular.otf */,
 			);
-			path = "New Group";
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,14 +665,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C84B0A25AF1FFE007E04B2 /* ConfigDev.xcconfig in Resources */,
-				60C84B3425AF3425007E04B2 /* 29LTAzer-Regular.otf in Resources */,
+				60C84B4625AF4588007E04B2 /* 29LTAzer-Regular.otf in Resources */,
+				60C84B4425AF4588007E04B2 /* 29LTAzer-Medium.otf in Resources */,
 				606DB94D25AB275B009A34E0 /* HomeTableViewCell.xib in Resources */,
 				606DB89A25AB0721009A34E0 /* ConfigRelesae.xcconfig in Resources */,
-				60C84B3325AF3425007E04B2 /* 29LTAzer-Medium.otf in Resources */,
-				60C84B2E25AF3407007E04B2 /* 29LTAzer-Bold.otf in Resources */,
 				606DB83825AAF671009A34E0 /* LaunchScreen.storyboard in Resources */,
+				60C84B4525AF4588007E04B2 /* 29LTAzer-Bold.otf in Resources */,
 				606DB83525AAF671009A34E0 /* Assets.xcassets in Resources */,
 				606DB89C25AB0721009A34E0 /* ConfigQA.xcconfig in Resources */,
+				60C84B4A25AF45AE007E04B2 /* Colors.xcassets in Resources */,
 				606DB88925AB0068009A34E0 /* HomeViewController.xib in Resources */,
 				606DB99A25AB427C009A34E0 /* DetailsViewController.xib in Resources */,
 			);
@@ -777,19 +778,18 @@
 				606DB91725AB2162009A34E0 /* BaseViewModel.swift in Sources */,
 				606DB8E625AB1A62009A34E0 /* NetworkManager.swift in Sources */,
 				60C84B2925AF3172007E04B2 /* Fonts.swift in Sources */,
+				60C84B3825AF425B007E04B2 /* UIViewController.swift+Loadding+Alert.swift in Sources */,
 				606DB93125AB2220009A34E0 /* BehaviorSubject.swift in Sources */,
 				606DB8CB25AB0F0C009A34E0 /* Environment.swift in Sources */,
 				606DB90C25AB1FAC009A34E0 /* HomeError+UI.swift in Sources */,
 				606DB94625AB25DD009A34E0 /* HomeViewModel.swift in Sources */,
 				606DB9B725AB4C3F009A34E0 /* HomeCoordinatorProtocol.swift in Sources */,
-				606DB93B25AB228A009A34E0 /* UIViewController+Loadding.swift in Sources */,
 				606DB92F25AB2220009A34E0 /* PublishSubject.swift in Sources */,
 				606DB92E25AB2220009A34E0 /* Observer.swift in Sources */,
 				606DB9A025AB4351009A34E0 /* DetailsViewModel.swift in Sources */,
 				606DB8BF25AB0E92009A34E0 /* PhotoResponse.swift in Sources */,
 				606DB8FC25AB1CB6009A34E0 /* Assets.swift in Sources */,
 				606DB90125AB1E5C009A34E0 /* Photo.swift in Sources */,
-				606DB8FB25AB1CB6009A34E0 /* Colors.swift in Sources */,
 				606DB8C425AB0EBD009A34E0 /* PhotoRequest.swift in Sources */,
 				606DB95525AB27D3009A34E0 /* TableView+Helpers.swift in Sources */,
 				606DB95725AB27D3009A34E0 /* UIView+Helpers.swift in Sources */,

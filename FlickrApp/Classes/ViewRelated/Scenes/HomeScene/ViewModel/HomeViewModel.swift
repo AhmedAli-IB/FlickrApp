@@ -17,13 +17,13 @@ class HomeViewModel: BaseViewModel {
     
     // MARK: - Properties
     //
-    private let photoInteractor: HomeInteractorProtocol
+    private let photoServiceLocator: HomeServiceLocatorProtocol
     private var photos: [Photo] = []
     
     // MARK: - Init
     //
-    init(photoInteractor: HomeInteractorProtocol = HomeInteractor()) {
-        self.photoInteractor = photoInteractor
+    init(photoServiceLocator: HomeServiceLocatorProtocol = HomeServiceLocator()) {
+        self.photoServiceLocator = photoServiceLocator
     }
     
     /// Number of rowss
@@ -41,13 +41,13 @@ class HomeViewModel: BaseViewModel {
 //
 extension HomeViewModel {
     
-    /// Get photos from interactor and return with photos or error
+    /// Get photos from service locator and return with photos or error
     /// - Parameter text: What you search for's
     func getPhotos(searchText text: String) {
         
         self.state.send(.loading)
         
-        photoInteractor.getPhotos(searchText: text) { [weak self](result) in
+        photoServiceLocator.getPhotos(searchText: text) { [weak self](result) in
             
             guard let self = self else { return }
             switch result {

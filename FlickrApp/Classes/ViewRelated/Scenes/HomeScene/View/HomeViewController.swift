@@ -37,7 +37,7 @@ private extension HomeViewController {
     
     func configureView() {
         self.title = Strings.title
-        self.navigationController?.navigationBar.barTintColor = ColorName.paperColor.color
+        self.navigationController?.navigationBar.barTintColor = Asset.Colors.paperColor.color
     }
     
     func configureTableView() {
@@ -47,8 +47,10 @@ private extension HomeViewController {
     }
     
     func registerCells() {
-        tableView.registerCellNib(HomeTableViewCell.self)
         
+//        tableView.registerCellNib(HomeTableViewCell.self)
+        let cellIdentifier = HomeTableViewCell.classNameWithoutNamespaces
+        tableView.register(HomeTableViewCell.loadNib(), forCellReuseIdentifier: cellIdentifier)
     }
     func configureViewModel() {
         viewModel.onReload = { [weak self] in
@@ -67,6 +69,10 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+//        let cell = tableView.dequeue(HomeTableViewCell.self)
+//        cell.viewModel = viewModel.getCurrentObject(for: indexPath)
+//        return cell
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.classNameWithoutNamespaces,
                                                  for: indexPath) as? HomeTableViewCell
         guard let homeCell = cell else {

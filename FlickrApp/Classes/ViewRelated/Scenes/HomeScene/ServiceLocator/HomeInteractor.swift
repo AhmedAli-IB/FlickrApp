@@ -1,5 +1,5 @@
 //
-//  HomeInteractor.swift
+//  HomeServiceLocator.swift
 //  FlickrApp
 //
 //  Created by Ahmed Ali on 10/01/2021.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol HomeInteractorProtocol {
+protocol HomeServiceLocatorProtocol {
     func getPhotos(searchText text: String, onCompletion: @escaping (Result<[Photo], Error>) -> Void)
 }
 
-// MARK: - Photo Interactor
-/// Home interactor interact with remote and local to make CRUD operation in photo model
+// MARK: - Home Service Locator
+/// Home HomeServiceLocator interact with remote and local to make CRUD operation in photo model
 ///
-class HomeInteractor: HomeInteractorProtocol {
+class HomeServiceLocator: HomeServiceLocatorProtocol {
     
     typealias PhotoCompletion = (Result<[Photo], Error>) -> Void
     

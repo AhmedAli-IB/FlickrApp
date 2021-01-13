@@ -59,7 +59,7 @@ private extension DetailsViewController {
         }
         
         viewModel.imageUrl.subscribe { [weak self] value in
-            self?.photoImageView.setImage(urlString: value, placeholder: Asset.placeholder.image)
+            self?.photoImageView.setImage(urlString: value, placeholder: Asset.Assets.placeholder.image)
         }
     }
 }
